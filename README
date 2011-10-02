@@ -1,0 +1,20 @@
+CheckVersion is a TestLibrary for RobotFramework
+(see http://code.google.com/p/robotframework/).
+It is intended to check version information stored
+in executable files in Windows OS, mostly the
+ProductVersion and FileVersion information which
+could be important in case of a new solution package.
+
+It is not platform independent because utilizes a small
+.NET program -- GetFVer.exe, source also included -- to
+get corresponding information from files.
+
+CheckVersion is designed in spirit of KISS (Keep It Siple
+and Stupid) and it is also designed to use with
+robotframework-x.y.z.jar as a standalone (and portable) 
+test tool. Currently x.y.z is 2.6.2.
+
+There was no decision about license at the moment of the 
+initial commit. The publisher, Laszlo Szalai 
+(lj.szalai@yahoo.com) feels himself no author but editor
+and publisher instead.
