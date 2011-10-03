@@ -1,0 +1,22 @@
+*** Settings ***
+Library         OperatingSystem
+Library         String
+Library         ..\\ConvertVersion\\ConvertVersion.py
+
+*** Variables ***
+${FileVersionRegexp}  FileVersion:\\s*(\\d+)[\\.,]\\s*(\\d+)[\\.,]?\\s*(\\d+)?[\\.,]?\\s*(\\d+)?.*
+${ProductVersionRegexp}  ProductVersion:\\s*(\\d+)[\\.,]\\s*(\\d+)[\\.,]?\\s*(\\d+)?[\\.,]?\\s*(\\d+)?.*
+
+*** Keywords ***
+GetFileVersionString
+    [Arguments]  ${fileName}
+    ${fvs} =  Get Version String  ${fileName}  ${FileVersionRegexp}  .
+    Log  ${fvs}
+    [Return]  ${fvs}
+
+GetProductVersionString
+    [Arguments]  ${fileName}
+    ${pvs} =  Get Version String  ${fileName}  ${ProductVersionRegexp}  .
+    Log  ${pvs}
+    [Return]  ${pvs}
+

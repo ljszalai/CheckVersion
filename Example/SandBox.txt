@@ -1,0 +1,13 @@
+*** Settings ***
+Documentation   A usage example for CheckVersion.py \nGets ProductVersion from Notepad.exe and checks it against the given value
+Resource        keywords.txt
+
+*** Variables ***
+${Notepad_version}  5.1.2600.5513
+
+*** Test Cases ***
+TestVersionOfNotepad
+    Log  ${CURDIR}
+    ${ver}=  Get Product Version String  c:/WINDOWS/NOTEPAD.EXE
+    Should be equal  ${Notepad_version}  ${ver}
+

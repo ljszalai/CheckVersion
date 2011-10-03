@@ -1,0 +1,4 @@
+*** Settings ***
+Documentation   This suite is intended to test FileVersions and ProductVersions of CAROL components
+Library         OperatingSystem
+
