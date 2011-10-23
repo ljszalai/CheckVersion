@@ -14,7 +14,16 @@ and Stupid) and it is also designed to use with
 robotframework-x.y.z.jar as a standalone (and portable) 
 test tool. Currently x.y.z is 2.6.2.
 
-There was no decision about license at the moment of the 
-initial commit. The publisher, Laszlo Szalai 
-(lj.szalai@yahoo.com) feels himself no author but editor
-and publisher instead.
+This stuff is published under uncopyright can be read
+at http://mnmlist.com/uncopyright
+Please keep it seriously and as readable under the 'Terms 
+and conditions' section, 'Do whatever the hell you like.'
+
+Attribution, of course, is appreciated but not needed.
+
+CheckVersion is based on the work of Lajos Nagy who
+made the original version of the GetFVer util.
+
+Thanks to Pekka Klärck for RobotFramework and the 
+encouragement to publish this. I hope that it will
+help you.
