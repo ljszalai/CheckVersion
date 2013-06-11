@@ -1,29 +1,22 @@
 CheckVersion is a TestLibrary for RobotFramework
 (see http://code.google.com/p/robotframework/).
-It is intended to check version information stored
-in executable files in Windows OS, mostly the
-ProductVersion and FileVersion information which
-could be important in case of a new solution package.
+It is intended to check version information stored in executable files in Windows OS, mostly the ProductVersion and FileVersion information which could be important in case of a new solution package.
 
-It is not platform independent because utilizes a small
-.NET program -- GetFVer.exe, source also included -- to
-get corresponding information from files.
+It is not platform independent because utilizes a small .NET program -- GetFVer.exe, source also included -- to get corresponding information from files.
 
-CheckVersion is designed in spirit of KISS (Keep It Siple
-and Stupid) and it is also designed to use with
-robotframework-x.y.z.jar as a standalone (and portable) 
-test tool. Currently x.y.z is 2.6.2.
+CheckVersion is designed in spirit of KISS (Keep It Siple and Stupid) and it is also designed to use with robotframework-x.y.z.jar as a standalone (and portable) test tool. Currently x.y.z is 2.6.2.
 
-This stuff is published under uncopyright can be read
-at http://mnmlist.com/uncopyright
-Please keep it seriously and as readable under the 'Terms 
-and conditions' section, 'Do whatever the hell you like.'
+This stuff is published under uncopyright can be read at http://mnmlist.com/uncopyright
+Please keep it seriously and as readable under the 'Terms and conditions' section, 'Do whatever the hell you like.'
 
 Attribution, of course, is appreciated but not needed.
 
-CheckVersion is based on the work of Lajos Nagy who
-made the original version of the GetFVer util.
+CheckVersion is based on the work of Lajos Nagy who made the original version of the GetFVer util. Parsing command line arguments is based on work of GriffonRL (see: http://www.codeproject.com/Articles/3111/C-NET-Command-Line-Arguments-Parser and GriffonRL's page there: http://www.codeproject.com/script/Membership/View.aspx?mid=50981)
 
-Thanks to Pekka Klärck for RobotFramework and the 
-encouragement to publish this. I hope that it will
-help you.
+Thanks to Pekka Klärck for RobotFramework and the encouragement to publish this. I hope that it will help you.
+
+--
+Update @2013-06-11:
+As a sideproject Ver2Csv has been developed and committed to collect version related informations recursively from a given base folder.
+(see ver2csv.exe -h or the source itself for further details)
+Additionally it has an enhanced version of command line parser where attributes not related to a switch are also available for processing.
